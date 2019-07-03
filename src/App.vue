@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view/>
+    <FooterGuider/>
   </div>
 </template>
 
 <script>
+import FooterGuider from '@/components/FooterGuider.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    FooterGuider
+  }
 }
 </script>
 
